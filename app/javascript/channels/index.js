@@ -3,3 +3,7 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
+
+$(document).on('turbolinks:load', function(){
+    $('.ui.dropdown').dropdown();
+})
